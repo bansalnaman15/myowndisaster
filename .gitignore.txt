@@ -23,6 +23,8 @@ develop-eggs/
 dist/
 downloads/
 eggs/
+venv/
+.idea/
 .eggs/
 lib/
 lib64/
