@@ -2,6 +2,7 @@ import datetime
 import json
 from flask import Flask, jsonify
 from flask_httpauth import HTTPBasicAuth
+from jinja2.utils import generate_lorem_ipsum
 from werkzeug.security import generate_password_hash, check_password_hash
 from flask_pymongo import PyMongo
 from apscheduler.schedulers.background import BackgroundScheduler
@@ -60,6 +61,10 @@ def hello_world():
 def userDedo():
     users = list(userCol.find({}))
     return jsonify({"data": users}), 200
+
+@app.route('/test1')
+def loremDedo():
+    return jsonify({"data": generate_lorem_ipsum()}), 200
 
 
 if __name__ == '__main__':
