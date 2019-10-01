@@ -66,6 +66,9 @@ def userDedo():
 def loremDedo():
     return jsonify({"data": generate_lorem_ipsum()}), 200
 
-
+@app.route('/naman')
+def kuchbhidedo():
+    a="The term brother comes from the Proto-Indo-European *bʰréh₂tēr, which becomes Latin frater, of the same meaning. Sibling warmth, or sibling affect between male siblings has been correlated to some more negative effects. In pairs of brothers higher sibling warmth is related to more risk taking behaviour although risk taking behaviour is not related to sibling warmth in any other type of sibling pair. The cause of this phenomenon in which sibling warmth is only correlated with risk taking behaviours in brother pairs still is unclear. This finding does, however, suggest that although sibling conflict is a risk factor for risk taking behaviour, sibling warmth does not serve as a protective factor.[4] Some studies suggest that girls having an older brother delays the onset of menarche by roughly one year.[5] Research also suggests that the likelihood of being gay increases with the more older brothers a man has.[6] Some analyzers have suggested that a man's attractiveness to a heterosexual woman may increase with the more he resembles her brother, while his unattractiveness may increase the more his likeness diverges from her brother.[7] Females with a twin or very close-in-age brother, sometimes view him as their male alter ego, or what they would have been like, if they had a Y chromosomes."
+    return a
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=1502)
