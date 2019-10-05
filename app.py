@@ -79,7 +79,7 @@ def lolololol():
 
 @app.route('/redirect',methods=["GET"])
 def redirect_test():
-    return redirect("www.google.com")
+    return redirect("https://www.google.com",code=302)
 
 
 
