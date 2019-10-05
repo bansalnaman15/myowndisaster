@@ -1,6 +1,6 @@
 import datetime
 import json
-from flask import Flask, jsonify, request
+from flask import Flask, jsonify, request, redirect
 from flask_httpauth import HTTPBasicAuth
 from jinja2.utils import generate_lorem_ipsum
 from werkzeug.security import generate_password_hash, check_password_hash
@@ -76,6 +76,10 @@ def kuchbhidedo():
 def lolololol():
     data = request.get_json()
     return jsonify(data)
+
+@app.route('/redirect',methods=["GET"])
+def redirect_test():
+    return redirect("www.google.com")
 
 
 
