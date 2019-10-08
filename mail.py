@@ -1,7 +1,6 @@
 from flask import Flask
 from flask_mail import Mail, Message
 
-from app import loremDedo
 
 app =Flask(__name__)
 mail=Mail(app)
