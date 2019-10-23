@@ -30,7 +30,7 @@ lazy-object-proxy==1.4.2
 MarkupSafe==1.1.1
 mccabe==0.6.1
 Mongothon==0.8.0
-Pillow==6.0.0
+Pillow==6.2.0
 pycparser==2.19
 pyfcm==1.4.7
 PyJWT==1.7.1
