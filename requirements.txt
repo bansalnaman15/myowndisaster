@@ -33,7 +33,7 @@ Mongothon==0.8.0
 Pillow==6.0.0
 pycparser==2.19
 pyfcm==1.4.7
-PyJWT==1.7.1
+PyJWT==2.4.0
 pylint==2.3.1
 pymongo==3.7.2
 PySocks==1.6.8
